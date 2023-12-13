@@ -14,6 +14,10 @@ public class Basics4 {
 			System.out.println("Before Class2");
 			System.out.println("Before Class3");
 			System.out.println("Before Class4");
+			//ARchitect Changes
+			System.out.println("Before Class5");
+			System.out.println("Before Class6");
+			System.out.println("Before Class7");
 		}
 
 		@AfterClass
