@@ -19,6 +19,11 @@ public class Basics2 {
 		System.out.println("Good5");
 		System.out.println("Post Jira 2");
 		System.out.println("Post Jira 3");
+		//American Guy changes
+		System.out.println("Post Jira 4");
+		System.out.println("Post Jira 5");
+		System.out.println("Post Jira 6");
+		
 		
 		
 	}

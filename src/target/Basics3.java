@@ -23,6 +23,7 @@ public class Basics3 {
 		//Appium
 		System.out.println("mobilelogincar");
 		System.out.println("mobilelogincar2");
+		System.out.println("Web Automation");
 	}
 	@Test//(timeOut = 4000)
 	public void MobileSignincarLoan() {
