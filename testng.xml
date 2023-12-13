@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department" parallel="tests" thread-count="2"><!--runs two test in parallel based on thread count-->
+	<listeners>
+		<listener class-name="target.Listeners"/>
+	</listeners>
+	<parameter name="URL" value="https://rahulshettyacademy.com/"/>
+  <test name="PersonalLoan" parallel="classes" thread-count="3"><!--runs two classes in parallel based on thread count-->
+	  	<parameter name="URL" value="https://personalloan.com/"/>
+	  	<parameter name="APIkey/username" value="12345"/>
+    <classes>
+      
+      <class name="target.TestNGBasicsClass1">
+		  <methods>
+			  <include name="Demo2"/>
+		  </methods>
+	  </class>
+      <class name="target.Basics2"/>
+      <class name="target.Basics4"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Car Loan">
+	  <parameter name="URL" value="https://carloan.com/"/>
+	  <classes>
+		  <class name ="target.Basics3">
+			  <methods>
+				  <!--<exclude name="MobileLogincarLoan"/>BELOW IS USING REGEX-->
+				  <!--<include name="Mobile.*"/>-->
+				  
+			  </methods>
+			  
+		  </class>
+	  </classes>
+  </test>
+</suite> <!-- Suite -->
