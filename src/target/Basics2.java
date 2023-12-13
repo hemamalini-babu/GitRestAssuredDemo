@@ -25,6 +25,8 @@ public class Basics2 {
 		System.out.println("Post Jira 6");
 		//Architect changes
 		System.out.println("Change approved");
+		//American architect changes
+		System.out.println("Changes confirmed");
 		
 		
 		
